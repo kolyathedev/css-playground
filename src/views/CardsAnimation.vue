@@ -1,3 +1,6 @@
+<script setup lang="ts">
+import CardEffect3 from '../components/CardEffect3.vue'
+</script>
 <template>
 	<div class="flex-container">
 		<div style="flex-grow: 1">1 1/3</div>
@@ -76,13 +79,15 @@
 						perferendis repudiandae quod ducimus aut dolorum fugiat consequatur
 						necessitatibus.
 					</q>
-					<p>living la vie da loca</p>
+					<p>Quote</p>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<CardEffect3 />
 </template>
-<script lang="ts"></script>
+
 <style lang="scss" scoped>
 .card {
 	box-shadow: 0 4px 8px 0 rgba($color: #000000, $alpha: 0.2);
@@ -92,14 +97,17 @@
 	cursor: pointer;
 	border-radius: 10px;
 	padding: 10px;
+	height: auto;
 	&:hover {
 		box-shadow: 0 8px 16px 0 rgba($color: #000000, $alpha: 1);
 		background: #ffffff;
 	}
 	display: grid;
-	grid-template-rows: repeat(2, 1fr);
+	grid-template-rows: repeat(2, auto);
 	img {
-		place-self: center;
+		place-self: start;
+		height: auto;
+		width: 100px;
 	}
 	.container {
 		text-align: left;
